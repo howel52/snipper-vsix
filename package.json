@@ -1,0 +1,54 @@
+{
+  "name": "snipper",
+  "displayName": "Snipper",
+  "description": "",
+  "publisher": "howel52",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.39.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "Snipper.lookFor",
+        "title": "Look For",
+        "category": "Snipper"
+      },
+      {
+        "command": "Snipper.clearCache",
+        "title": "Clear cache",
+        "category": "Snipper"
+      }
+    ],
+    "configuration": {
+      "title": "Snipper",
+      "properties": {
+        "snipper.customSnips": {
+          "type": "object",
+          "description": "custom snip"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "compile": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.21",
+    "@types/vscode": "^1.39.0",
+    "@types/react": "^16.9.9",
+    "tslint": "^5.12.1",
+    "typescript": "^3.4.5",
+    "vscode": "^1.1.28"
+  },
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}

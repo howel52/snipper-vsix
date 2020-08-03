@@ -1,0 +1,1 @@
+const flatten = (list = []) => list.reduce((pre, cur) => Array.isArray(cur) ? pre.concat(flatten(cur)) : pre.concat(cur) , []);
